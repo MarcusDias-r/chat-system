@@ -1,13 +1,15 @@
+<!DOCTYPE html>
 <html>
     <head>
-    
-    </head>
+        <title>Chat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/style.css">
+       
+ </head>
     <body>
-    Esse é o topo<br/>
-    <hr/>
-    <a href="<?= BASE_URL;?>/">Home</a>
-    
-    <?php $this->loadViewInTemplate($viewName, $viewData);?>
 
+    
+        <?php $this->loadViewInTemplate($viewName, $viewData);?>
+        <script type="text/javascript" src="<?= BASE_URL;?>assets/css/style.js"></script>
     </body>
 </html>

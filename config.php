@@ -4,14 +4,14 @@ require 'environment.php';
 $config = array();
 
 if(ENVIRONMENT == 'development'){
-    define("BASE_URL", "http://localhost/project");
-    $config['dbname'] = 'contaazul';
+    define("BASE_URL", "http://localhost/project/");
+    $config['dbname'] = 'chat-system';
     $config['host'] =   'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
 }else{
-    define("BASE_URL", "http://localhost/project");
-    $config['dbname'] = 'contaazul';
+    define("BASE_URL", "http://localhost/project/");
+    $config['dbname'] = 'chat-system';
     $config['host'] =   'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
@@ -27,4 +27,4 @@ try{
     echo "ERRO: ".$e->getMessage();
     exit;
 
-}
+} 
