@@ -1,11 +1,12 @@
 <?php
-class model{
+class Model {
+	
+	protected $db;
 
-    protected $db;
+	public function __construct() {
+		global $db;
+		$this->db = $db;
+	}
 
-    public function __construct(){
-        global $db;
-        $this->db = $db;
-    }
 }
-
+?>
