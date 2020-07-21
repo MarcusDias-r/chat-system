@@ -17,7 +17,7 @@ class homeController extends controller{
         $data = array();
 
         $this->loadTemplate('home', $data);
-        $this->user->getUid();
+        //$this->user->getUid();
     }
 }
 

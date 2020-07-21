@@ -93,7 +93,7 @@ Class Users extends Model{
         $sql->bindValue(":id", $uid);
         $sql->execute();
     }
-    // continuar aula 6 min 11:48
+  
 
     public function getUid(){
         return $this->uid;
