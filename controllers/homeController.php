@@ -1,4 +1,5 @@
 <?php 
+
 class homeController extends controller{
     
     private $user;
@@ -15,9 +16,9 @@ class homeController extends controller{
     }
     public function index(){
         $data = array();
-
+    
         $this->loadTemplate('home', $data);
-        //$this->user->getUid();
+        $this->user->getUid();
     }
 }
 

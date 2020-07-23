@@ -11,4 +11,12 @@ class Groups extends Model{
         return $array;
     }
 
+    public function add($name){
+        $sql = "INSERT INTO groups (name) VALUES (:name)";
+        $sql =  $this->db->prepare($sql);
+        $sql->bindValue(':name', $name);
+        $sql->execute();
+
+    }
+
 }

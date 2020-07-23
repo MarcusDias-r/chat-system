@@ -80,3 +80,6 @@ nav li.active{
 #groupList :hover{
     background-color: #CCC;
 }
+.active_group{
+    background-color: #EEE !important;
+}
