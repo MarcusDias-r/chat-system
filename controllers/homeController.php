@@ -14,11 +14,16 @@ class homeController extends controller{
             exit;
         }
     }
+
     public function index(){
+
         $data = array();
-    
+        $users = new Users();
+
+       
+
         $this->loadTemplate('home', $data);
-        $this->user->getUid();
+        $this->users->getUid();
     }
 }
 

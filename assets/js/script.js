@@ -67,5 +67,16 @@ $(function(){
 
        chat.setActiveGroup(id);
     });
+
+    $('#sender_input').on('keyup', function(e){
+        
+        if(e.keyCode == 13){
+            var msg = $(this).val();
+            $(this).val('');
+
+            chat.sendMessage(msg);
+        }
+
+    })
 });
 

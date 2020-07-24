@@ -6,12 +6,12 @@
         <button class="add_tab">+</button>
     </nav>
     <section>
-            <div class="message">
+            <div class="messages">
+                <div class="m_body">
+                    
+                </div>
+            </div>
             
-            </div>
-            <div class="m_body">
-                msg ex
-            </div>
         </div>
     </section>
 
